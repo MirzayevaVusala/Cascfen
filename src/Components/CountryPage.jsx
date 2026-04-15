@@ -65,6 +65,12 @@ const getEmbedUrl = (url) => {
   return null;
 };
 
+// YENİ: Şəkil yollarını avtomatik GitHub Pages formatına (./) salan funksiya
+const getSafeImagePath = (path) => {
+  if (!path) return '';
+  return `./${path.replace(/^\//, '')}`;
+};
+
 const CountryPage = ({ country, region, isRegion = false }) => {
   const [selected, setSelected] = useState(null);
 
@@ -151,7 +157,8 @@ const CountryPage = ({ country, region, isRegion = false }) => {
 
           {!hasFloat && article.image && (
             <>
-              <img src={article.image} alt={article.title} className="cp-detail__img" />
+              {/* YENİLİK: getSafeImagePath tətbiq edildi */}
+              <img src={getSafeImagePath(article.image)} alt={article.title} className="cp-detail__img" />
               <h2 className="cp-detail__subtitle">{article.excerpt}</h2>
             </>
           )}
@@ -170,11 +177,13 @@ const CountryPage = ({ country, region, isRegion = false }) => {
           <div className="cp-detail__body">
             {article.sections.map((section, i) => {
               if (section.type === 'image') return (
-                <img key={i} src={section.src} alt="" className="cp-detail__img cp-detail__img--inline" />
+                /* YENİLİK: getSafeImagePath tətbiq edildi */
+                <img key={i} src={getSafeImagePath(section.src)} alt="" className="cp-detail__img cp-detail__img--inline" />
               );
               if (section.type === 'image-float') return (
                 <figure key={i} className="cp-detail__float">
-                  <img src={section.src} alt={section.caption || ''} className="cp-detail__float-img" />
+                  {/* YENİLİK: getSafeImagePath tətbiq edildi */}
+                  <img src={getSafeImagePath(section.src)} alt={section.caption || ''} className="cp-detail__float-img" />
                   {section.caption && <figcaption className="cp-detail__float-cap">{section.caption}</figcaption>}
                 </figure>
               );
@@ -221,7 +230,8 @@ const CountryPage = ({ country, region, isRegion = false }) => {
               <div key={`${item.id}-${item.title}`} className="cp-card" onClick={() => setSelected(item.id)}>
                 {item.image ? (
                   <div className="cp-card__img-wrap">
-                    <img src={item.image} alt={item.title} className="cp-card__img" />
+                    {/* YENİLİK: getSafeImagePath tətbiq edildi */}
+                    <img src={getSafeImagePath(item.image)} alt={item.title} className="cp-card__img" />
                     {item.tags && item.tags.length > 0 && (
                       <div className="cp-card__tags">
                         {item.tags.map((tag, i) => <span key={i} className="cp-tag">{tag}</span>)}

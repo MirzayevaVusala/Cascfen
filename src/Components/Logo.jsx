@@ -1,26 +1,24 @@
 import React from 'react';
 import './Logo.css';
-// Şəkilləri import etmək ən təhlükəsiz yoldur (Webpack/Vite bunu idarə edir)
-import logo1 from '../../assets/Photos/logo.png'; 
-import logo2 from '../../assets/Photos/logo2.png';
 
 const Logo = () => {
   return (
     <header className="site-header">
       <div className="header-container">
         
+        {/* Sol tərəf: Dəstəkçi Loqosu */}
         <div className="logo-frame">
-          {/* Əgər public qovluğundadırsa, başdakı '/' silib yoxlayın */}
           <img 
-            src="Photos/logo.png" 
+            src="./Photos/logo.png" 
             alt="Partner Agency" 
             className="img-logo" 
           />
         </div>
 
+        {/* Sağ tərəf: Əsas CASCFEN Loqosu */}
         <div className="logo-frame">
           <img 
-            src="Photos/logo2.png" 
+            src="./Photos/logo2.png" 
             alt="CASCFEN Logo" 
             className="img-logo" 
           />

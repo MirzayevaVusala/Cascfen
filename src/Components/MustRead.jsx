@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { qhtNews } from "../Data/News"; 
-import "./MustReadStyle.css"; // CSS faylını bura bağlayırıq
+import "./MustReadStyle.css";
 
 const tagColorMap = {
   AZƏRBAYCAN: "#1565C0",
@@ -12,6 +12,13 @@ const tagColorMap = {
   MƏQALƏLƏR: "#6B4C9A",
   LAYİHƏLƏR: "#FF6B35",
   TƏHSİL: "#2E7D32",
+};
+
+// YENİ: Şəkil yollarını GitHub Pages üçün təhlükəsiz edən funksiya
+const getSafeImagePath = (path) => {
+  if (!path) return "https://via.placeholder.com/600";
+  // Başdakı "/" işarəsini silib nöqtə əlavə edirik
+  return `./${path.replace(/^\//, '')}`;
 };
 
 export default function MustRead() {
@@ -61,7 +68,12 @@ export default function MustRead() {
               }}
             >
               <div className="mustread-img-wrap">
-                <img src={a.image} alt={a.title} className="mustread-img" />
+                {/* YENİLİK: getSafeImagePath tətbiq edildi */}
+                <img 
+                  src={getSafeImagePath(a.image)} 
+                  alt={a.title} 
+                  className="mustread-img" 
+                />
                 <div className="mustread-img-overlay" />
                 {(a.badge || a.title.includes("VİDEO")) && (
                   <span className="mustread-badge">VİDEO</span>

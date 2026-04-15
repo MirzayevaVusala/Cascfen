@@ -1,9 +1,14 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Səhifəyə keçid üçün
-import { azerbaycanNews } from "../Data/News"; // Data faylınızın yolunu öz proyektinizə uyğun yoxlayın
+import { useNavigate } from "react-router-dom";
+import { azerbaycanNews } from "../Data/News"; 
 import "./NewestStyles.css";
 
-// Azərbaycan xəbərlərindən ilk 4-nü alırıq
+// Şəkil yollarını GitHub Pages üçün təhlükəsiz edən funksiya
+const getSafeImagePath = (path) => {
+  if (!path) return "https://via.placeholder.com/800";
+  return `./${path.replace(/^\//, '')}`;
+};
+
 const latestArticles = azerbaycanNews.slice(0, 4);
 
 const tagColors = {
@@ -18,7 +23,6 @@ export default function NewestSection() {
   const [current, setCurrent] = useState(0);
   const navigate = useNavigate();
 
-  // Əgər ümumiyyətlə xəbər yoxdursa, bölməni boş qaytarırıq (və ya placeholder göstərə bilərsiniz)
   if (!latestArticles || latestArticles.length === 0) {
     return null; 
   }
@@ -28,10 +32,7 @@ export default function NewestSection() {
 
   const featured = latestArticles[current];
 
-  // Böyük xəbərə kliklədikdə işləyəcək funksiya
   const handleArticleClick = (id) => {
-    // Proyektinizin URL strukturuna uyğunlaşdırın. 
-    // Məsələn, xəbər səhifələriniz "/xeber/123" şəklindədirsə:
     navigate(`/guney-qafqaz/azerbaycan`);
   };
 
@@ -41,7 +42,6 @@ export default function NewestSection() {
       <div className="newest-bg-orb2" />
 
       <div className="newest-container">
-        {/* Header */}
         <div className="newest-header">
           <div className="newest-title-group">
             <span className="newest-accent-bar" />
@@ -53,16 +53,16 @@ export default function NewestSection() {
           </div>
         </div>
 
-        {/* Featured card (Əsas Kart) - Kliklədikdə səhifəyə yönləndirir */}
         <div 
           className="newest-featured-card" 
           onClick={() => handleArticleClick(featured.id)}
-          style={{ cursor: "pointer" }} // İstifadəçiyə kliklənə bilən olduğunu göstərir
+          style={{ cursor: "pointer" }}
           title="Xəbəri oxumaq üçün klikləyin"
         >
           <div className="newest-image-wrapper">
             <img
-              src={featured.image || "https://via.placeholder.com/800"} // Şəkil yoxdursa placeholder
+              /* YENİLİK: getSafeImagePath tətbiq edildi */
+              src={getSafeImagePath(featured.image)} 
               alt={featured.title}
               className="newest-featured-image"
               key={featured.id}
@@ -74,7 +74,6 @@ export default function NewestSection() {
                   <span
                     key={tag}
                     className="newest-tag"
-                    // Tag rəngləri üçün böyük/kiçik hərf fərqini aradan qaldırırıq
                     style={{ background: tagColors[tag.toUpperCase()] || "#FF6B35" }}
                   >
                     {tag}
@@ -84,18 +83,15 @@ export default function NewestSection() {
               <h3 className="newest-featured-title">{featured.title}</h3>
               <div className="newest-meta-row">
                 <span className="newest-date-text">📅 {featured.date}</span>
-                {/* Datada "source" əvəzinə "author" varsa, onu göstəririk */}
                 <span className="newest-source-tag">{featured.author || featured.source || "CASCFEN"}</span>
               </div>
             </div>
           </div>
 
-          {/* Indicators */}
           <div className="newest-indicators">
             {latestArticles.map((_, i) => (
               <button
                 key={i}
-                // Stop propagation: Nöqtəyə basanda xəbərə girməsin, sadəcə slaydı dəyişsin
                 onClick={(e) => { e.stopPropagation(); setCurrent(i); }}
                 className={`newest-dot${i === current ? " active" : ""}`}
               />
@@ -103,7 +99,6 @@ export default function NewestSection() {
           </div>
         </div>
 
-        {/* Thumbnail strip (Kiçik şəkillər) - Kliklədikdə slaydı dəyişir */}
         <div className="newest-thumb-strip">
           {latestArticles.map((a, i) => (
             <div
@@ -111,7 +106,8 @@ export default function NewestSection() {
               onClick={() => setCurrent(i)}
               className={`newest-thumb-card${i === current ? " active" : ""}`}
             >
-              <img src={a.image || "https://via.placeholder.com/150"} alt={a.title} className="newest-thumb-image" />
+              {/* YENİLİK: getSafeImagePath tətbiq edildi */}
+              <img src={getSafeImagePath(a.image)} alt={a.title} className="newest-thumb-image" />
               <div className="newest-thumb-info">
                 <p className="newest-thumb-title">{a.title}</p>
                 <span className="newest-thumb-date">{a.date}</span>

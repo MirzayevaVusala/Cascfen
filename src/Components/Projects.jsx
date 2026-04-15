@@ -19,6 +19,13 @@ const tagColorMap = {
 const ITEMS_PER_PAGE = 6;
 const SIBLING_COUNT = 1;
 
+// YENİ: Şəkil yollarını GitHub Pages üçün təhlükəsiz edən funksiya
+const getSafeImagePath = (path) => {
+  if (!path) return "https://via.placeholder.com/600";
+  // Başdakı "/" işarəsini silib nöqtə əlavə edirik
+  return `./${path.replace(/^\//, '')}`;
+};
+
 // Pagination məntiqi (dəyişməz qalır)
 function getPaginationRange(currentPage, totalPages) {
   const totalButtons = SIBLING_COUNT * 2 + 5;
@@ -67,7 +74,6 @@ export default function ProjectsSection() {
   const handlePage = (page) => {
     if (page < 1 || page > totalPages) return;
     setCurrentPage(page);
-    // Səhifə dəyişəndə yuxarı sürüşdür
     const section = document.querySelector('.projects-section');
     if (section) section.scrollIntoView({ behavior: 'smooth' });
   };
@@ -127,10 +133,14 @@ export default function ProjectsSection() {
               style={{ cursor: 'pointer' }}
             >
               <div className="projects-card-image-wrapper">
-                <img src={project.image || "https://via.placeholder.com/600"} alt={project.title} className="projects-card-image" />
+                {/* YENİLİK: getSafeImagePath tətbiq edildi */}
+                <img 
+                  src={getSafeImagePath(project.image)} 
+                  alt={project.title} 
+                  className="projects-card-image" 
+                />
                 <div className="projects-card-overlay" />
                 
-                {/* Əgər datada badge yoxdursa, 'YENİ' və ya boş göstər */}
                 {project.date.includes("2026") && (
                   <span className="projects-badge-chip">YENİ</span>
                 )}

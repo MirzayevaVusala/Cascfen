@@ -6,6 +6,13 @@ import "../Components/ArticlesStyles.css";
 
 const ITEMS_PER_PAGE = 6;
 
+// YENİ: Şəkil yollarını GitHub Pages üçün təhlükəsiz edən funksiya
+const getSafeImagePath = (path) => {
+  if (!path) return "https://via.placeholder.com/600";
+  // Başdakı "/" işarəsini silib nöqtə əlavə edirik (./Photos/...)
+  return `./${path.replace(/^\//, '')}`;
+};
+
 function getPaginationRange(current, total) {
   if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
   const left = Math.max(current - 1, 1);
@@ -69,8 +76,9 @@ export default function Articles() {
               style={{ cursor: 'pointer' }}
             >
               <div className="mq-card-img-wrap">
+                {/* YENİLİK: getSafeImagePath tətbiq edildi */}
                 <img 
-                  src={article.image || "https://via.placeholder.com/600"} 
+                  src={getSafeImagePath(article.image)} 
                   alt={article.title} 
                   className="mq-card-img" 
                 />

@@ -10,7 +10,6 @@ import { tacikistanNews } from '../Data/Tacikistan';
 import { qirgizistanNews } from '../Data/Qirgizistan';
 import { ozbekistanNews } from '../Data/Ozbekistan';
 
-// Data faylından parseDate-i import edirik
 import {
   parseDate,
   xeberlerNews,
@@ -65,10 +64,12 @@ const getEmbedUrl = (url) => {
   return null;
 };
 
-// YENİ: Şəkil yollarını avtomatik GitHub Pages formatına (./) salan funksiya
+// Logolarda işləyən məntiq: Şəklin əvvəlinə mütləq ./ əlavə edirik
 const getSafeImagePath = (path) => {
   if (!path) return '';
-  return `./${path.replace(/^\//, '')}`;
+  // Əgər yol /Photos... ilə başlayırsa, / işarəsini silib ./Photos... edirik
+  const cleanPath = path.replace(/^\//, '');
+  return `./${cleanPath}`;
 };
 
 const CountryPage = ({ country, region, isRegion = false }) => {
@@ -103,12 +104,10 @@ const CountryPage = ({ country, region, isRegion = false }) => {
   const processedNews = [];
   const seenTitles = new Set();
 
-  // YENİLİK: Tarixə görə düzgün sıralama üçün Data faylındakı parseDate-dən istifadə edirik
   const sortedRaw = [...rawNews].sort((a, b) => {
     return parseDate(b.date) - parseDate(a.date);
   });
 
-  // Komponent daxilində eyni başlıqlı region xəbərlərinin təkrarlanmasının qarşısını alırıq
   sortedRaw.forEach(item => {
     const cleanTitle = item.title.trim().toLowerCase();
     if (!seenTitles.has(cleanTitle)) {
@@ -132,7 +131,6 @@ const CountryPage = ({ country, region, isRegion = false }) => {
     </div>
   );
 
-  // ── Xəbər Detalı ──
   if (selected) {
     const article = processedNews.find(n => n.id === selected);
     if (!article) return renderLayout(null);
@@ -157,7 +155,6 @@ const CountryPage = ({ country, region, isRegion = false }) => {
 
           {!hasFloat && article.image && (
             <>
-              {/* YENİLİK: getSafeImagePath tətbiq edildi */}
               <img src={getSafeImagePath(article.image)} alt={article.title} className="cp-detail__img" />
               <h2 className="cp-detail__subtitle">{article.excerpt}</h2>
             </>
@@ -177,12 +174,10 @@ const CountryPage = ({ country, region, isRegion = false }) => {
           <div className="cp-detail__body">
             {article.sections.map((section, i) => {
               if (section.type === 'image') return (
-                /* YENİLİK: getSafeImagePath tətbiq edildi */
                 <img key={i} src={getSafeImagePath(section.src)} alt="" className="cp-detail__img cp-detail__img--inline" />
               );
               if (section.type === 'image-float') return (
                 <figure key={i} className="cp-detail__float">
-                  {/* YENİLİK: getSafeImagePath tətbiq edildi */}
                   <img src={getSafeImagePath(section.src)} alt={section.caption || ''} className="cp-detail__float-img" />
                   {section.caption && <figcaption className="cp-detail__float-cap">{section.caption}</figcaption>}
                 </figure>
@@ -213,7 +208,6 @@ const CountryPage = ({ country, region, isRegion = false }) => {
     );
   }
 
-  // ── Xəbər Siyahısı ──
   return renderLayout(
     <main className="cp">
       <div className="cp__inner">
@@ -230,7 +224,6 @@ const CountryPage = ({ country, region, isRegion = false }) => {
               <div key={`${item.id}-${item.title}`} className="cp-card" onClick={() => setSelected(item.id)}>
                 {item.image ? (
                   <div className="cp-card__img-wrap">
-                    {/* YENİLİK: getSafeImagePath tətbiq edildi */}
                     <img src={getSafeImagePath(item.image)} alt={item.title} className="cp-card__img" />
                     {item.tags && item.tags.length > 0 && (
                       <div className="cp-card__tags">

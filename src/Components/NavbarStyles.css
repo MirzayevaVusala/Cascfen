@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #0a0f2c;
+  --navy-deep: #060a1e;
+  --orange: #e85d04;
+  --orange-light: #f48c06;
+  --orange-glow: rgba(232, 93, 4, 0.25);
+  --white: #f0f4ff;
+  --white-muted: rgba(240, 244, 255, 0.6);
+}
+
+/* ── Navbar Container ── */
+.NavbarItems {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 70px;
+  background: var(--navy-deep);
+  border-bottom: 2px solid var(--orange);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 2px 12px var(--orange-glow);
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+}
+
+.NavbarItems::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--orange-light), var(--orange));
+}
+
+/* ── Logo ── */
+.navbar-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: var(--white);
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  flex-shrink: 0; /* Logonun sıxılmaması üçün */
+}
+
+.navbar-logo span {
+  color: var(--orange);
+}
+
+/* ── Google Translate Custom Design ── */
+#google_translate_element {
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.goog-te-gadget-simple {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 2px solid var(--orange) !important;
+  padding: 6px 12px !important;
+  border-radius: 4px !important;
+  font-family: 'Nunito', sans-serif !important;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.goog-te-gadget-simple:hover {
+  background-color: var(--orange) !important;
+  border-color: var(--orange-light) !important;
+}
+
+.goog-te-gadget-simple img {
+  display: none !important;
+}
+
+.goog-te-gadget-simple span, 
+.goog-te-menu-value span {
+  color: var(--orange-light) !important;
+  font-size: 0.9rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+
+.goog-te-gadget-simple:hover span {
+  color: var(--white) !important;
+}
+
+.goog-te-menu-value span:nth-child(3) {
+    color: var(--white) !important;
+    opacity: 0.7;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+/* ── Nav Menu (Desktop) ── */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.nav-menu li a {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--white-muted);
+  text-decoration: none;
+  border-radius: 3px;
+  position: relative;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--orange-light), var(--orange));
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: var(--white);
+}
+
+.nav-menu li a:hover::after {
+  width: 70%;
+}
+
+.nav-menu li a.active {
+  color: var(--orange-light);
+}
+
+.nav-menu li a.active::after {
+  width: 70%;
+}
+
+/* ── Hamburger Button ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+  background: none;
+  border: none;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+  background: var(--orange);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+  background: var(--orange);
+}
+
+/* ── RESPONSIVE TƏNZİMLƏMƏLƏR ── */
+
+/* 1. 1100px civarında elementlərin sığması üçün kiçiltmə */
+@media (max-width: 1200px) {
+  .NavbarItems { padding: 0 1.5rem; }
+  .nav-menu li a { padding: 0.45rem 0.6rem; font-size: 0.8rem; }
+  .navbar-logo { font-size: 1.7rem; }
+  #google_translate_element { margin-right: 10px; }
+}
+
+/* 2. 1050px-də Hamburger menyuya keçid (Skrolun qarşısını almaq üçün) */
+@media (max-width: 1050px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--navy-deep);
+    border-top: 1px solid var(--orange);
+    transform: translateY(-110%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 1.2rem 2rem;
+    font-size: 1rem;
+    border-radius: 0;
+  }
+
+  .nav-menu li a:hover {
+    background: rgba(232, 93, 4, 0.1);
+    padding-left: 2.5rem;
+  }
+
+  .nav-menu li a::after {
+    display: none;
+  }
+}
+
+/* 3. Mobil (768px və aşağı) */
+@media (max-width: 768px) {
+  .navbar-logo { font-size: 1.5rem; letter-spacing: 1.5px; }
+  #google_translate_element { margin-right: 5px; }
+  .goog-te-gadget-simple { padding: 4px 8px !important; }
+}

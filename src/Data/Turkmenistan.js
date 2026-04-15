@@ -1,0 +1,417 @@
+export const turkmenistanNews = [
+
+  {
+    id: 1,
+    title: "OSCE Centre in Ashgabat announces photo contest winners",
+    date: "17 Dekabr 2009 ",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "OSCE, Ashgabat, 17 Dec 2009 – The winners of the photo contest launched by the OSCE Centre in Ashgabat to celebrate its tenth anniversary were announced today, with the first prize awarded to Igor Lomov for his photo “Twin souls”." },
+      { type: "text", content: "Vladimir Kobushko received the second prize, and the third prize was awarded to Maya Kravtsova. A total of 38 photographers from across Turkmenistan submitted their entries on themes related to combating drug abuse and trafficking, environmental protection and promoting gender equality." },
+      { type: "text", content: "“The winning photo addresses the theme of environmental protection and reminds us that a true love for and harmony with nature will help us preserve its beauty for the next generations,” said Ambassador Arsim Zekolli, the Head of the OSCE Centre in Ashgabat. “We welcome the aspiration of Turkmenistan’s photographers to make use of their creativity to share their vision of some important aspects of life.”" },
+      { type: "text", content: "Lomov received a Canon EOS-45D camera kit. The prizes were handed out at the opening of a two-day photo exhibition featuring the 50 best photographs submitted for the photo contest." },
+         { type: "text", content: "The photo contest aimed to strengthen photojournalism in Turkmenistan and raise awareness of aspects of comprehensive security promoted by the OSCE Centre." },
+            ],
+  },
+    {
+    id: 2,
+    title: "Turkmenistan: OSCE media freedom representative opens pioneering seminar for journalists",
+    date: "30 Mart 2009",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "OSCE, Ashgabat, 30 Mar 2009 – The OSCE Representative on Freedom of the Media, Miklos Haraszti, met Rashid Meredov, Turkmenistan’s Deputy Chairman of the Cabinet of Ministers and Foreign Minister today, and welcomed the government’s intention to reform media education in the country." },
+      { type: "text", content: "Haraszti also opened a one-week training seminar for journalists, organized by the OSCE Centre in Ashgabad with the Foreign Ministry." },
+      { type: "text", content: "“The modern media is about knowing the world, but also about being known in the world and Turkmenistan recognizes the need to allow the country’s media to achieve both these objectives,” said Haraszti at the start of the seminar." },
+      { type: "text", content: "The seminar, conducted by international experts, will focus on using the Internet, the work of foreign correspondents, the main tasks of governmental press services and the work of press attachés." },
+         { type: "text", content: "Ambassador Arsim Zekolli, the Head of the OSCE Centre in Ashgabad, added: “Our pioneering event is in line with President Berdimuhamedov’s recent statement urging the media to create contemporary programmes. Development of Internet access in the country also helps to move forward in this direction." },
+            { type: "text", content: "Haraszti, who is on a two-day visit to Turkmenistan following an invitation from Meredov, will also lecture students at the newly established Institute for Foreign Relations on the OSCE’s history and his own experience in supporting the implementation of OSCE commitments in the field of media freedom." },
+                  ],
+  },
+    {
+    id: 3,
+    title: "Production Grant for Photographers from Central Asia, the Caucasus, Afghanistan, Mongolia, and Pakistan",
+    date: "4 Fevral 2009 ",
+    author: "Azer Hasret",
+    tags: ["Azərbaycan","Ermənistan","Gürcüstan","Məqalələr","Özbəkistan","Qazaxıstan","Qırğızıstan","Tacikistan","Türkmənistan"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "OSI, 04 Feb 2009 – The Open Society Institute Documentary Photography Project and Arts and Culture Program announce a grant opportunity for documentary photographers from Central Asia, the Caucasus, Afghanistan, Mongolia, and Pakistan." },
+      { type: "text", content: "Approximately 20 grants in the amount of $3,500 each will be awarded to photographers to produce a discrete body of work on a current human rights or social justice issue in the region." },
+      { type: "text", content: "Grantees will also be assigned an internationally recognized photographer as a mentor throughout the grant period. Mentors and grantees will participate in two workshops. The first workshop, at the beginning of the grant term, will consist of portfolio review, shooting and editing, discussion of proposed projects, and technical requirements/issues." },
+      { type: "text", content: "The second workshop, at the end of the grant period, will consist of preparing a final edit of the projects and examining options for the continuation of the project and the distribution of the work. Workshops will last for five days each and will be held in Central Asia and the Caucasus" },
+         { type: "text", content: "Translation will be provided if necessary. All workshop expenses, including travel and accommodations, will be paid by the Open Society Institute." },
+            { type: "text", content: "The deadline for proposals is March 20, 2009, at 5:00 pm (Eastern Standard Time)." },
+               { type: "text", content: "For more information on the grant, please review the grant guidelines below:" },
+                    ],
+  },
+    {
+    id: 4,
+    title: "Turkmenistan Health Authorities Alarmed at TV Habits of Children",
+    date: "30 Yanvar 2009 ",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa, Ashgabat, 29 Jan 2009 – A recent report in the Turkmen print media shows that authorities are concerned about the growing TV habits of children. The report says that preschoolers are watching TV for 1.5 to 2 hours a day or 10-14 hours a week." },
+      { type: "text", content: "The survey carried out among the schoolchildren shows that up to 70% of them are watching TV for 2 to 2.5 hours on weekdays and 3.3.5 hours per day on weekend. In all, they are sitting before the TV set 16-24 hours a week." },
+      { type: "text", content: "The report laments that TV is replacing other activities such as mixing with peers, reading, sports, indoor games, and walk in the fresh air." },
+      { type: "text", content: "The experts cited by the report say that excessive TV watching turns into a vicious cycle: The more they watch TV, the more tired they get, and they more tired they get the more tend to watch TV instead of going out to play." },
+         { type: "text", content: "The report partly blames the adults for setting the wrong example in that they tend to switch on TV as soon as they return home and keep sitting there, even taking their meals there, until the bedtime." },
+            { type: "text", content: "The report warns that the children addicted to TV are quite likely to be routinely tired, sluggish, and whimsical and may have frequent nightmares. It cautions that habitually long periods of TV watching could be significantly harmful for preschoolers, inducing physical and mental damage including psychosomatic symptoms." },
+               { type: "text", content: "The recommended time for preschoolers, the report says, is 30 minutes a day. The children in the 7-10 age group should not be allowed to sit before TV for more than an hour a day, with occasional relaxation of up to 1.5 hours." },
+                  { type: "text", content: "The parents should exercise their discretion as to what programmes are suitable for children, depending on their age." },
+                     { type: "text", content: "The children should sit at least 1.5 to meters away from TV but no more than 5-5.5 meters. They should not be allowed to watch TV while lying down on the carpet. There should be a permanent place for children for TV watching where TV screen should be at level with eyes. The room should not be completely dark when the TV is running." },
+    ],
+  },
+    {
+    id: 5,
+    title: "Another RFE/RL Correspondent In Turkmenistan Facing Harassment",
+    date: "10 Yanvar 2009 ",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "RFE/RL, Ashgabat, 09 Jan 2008 – Osman Hallyev, a longtime correspondent for RFE/RL’s Turkmen Service, says he has been placed under what amounts to house arrest in eastern Lebap Province due to his affiliation with RFE/RL. He says he fears his detention by state security forces is imminent." },
+      { type: "text", content: "Hallyev told RFE/RL’s Ashgabat correspondent that his son, daughter-in-law, and son-in-law have all lost their jobs, which he also attributes to his work with RFE/RL." },
+      { type: "text", content: "Hallyev says the local Prosecutor’s Office does not respond to his complaints regarding the situation. In addition, Hallyev’s international phone lines have been severed since mid-November and his access to the Internet has also been restricted. Local officials have promised to deal with the matter as soon as possible." },
+     
+    ],
+  },
+    {
+    id: 6,
+    title: "Turkmen minister of communication severely reprimanded",
+    date: "3 Yanvar 2009",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "Turkmenistan.ru, Ashgabat, 03 Jan 2009 – Turkmen minister of communication Resulberdi Hojagurbanow has been severely reprimanded by President Gurbanguly Berdimuhamedov who signed a resolution to this effect. According to the resolution, the minister has been reprimanded for failing to ensure the high quality implementation of the president’s instructions, “for poor control over the operation of equipment and sound effects of the New Year congratulatory messages sent by residents in regions during a TV conference between the capital and the regions”." },
+      { type: "text", content: "The communication minister has been warned that he will be relieved of his post if he fails to take measures to improve operations in line with the requirements, the Turkmenistan.ru correspondent reports from Ashgabat quoting the press service of the president of Turkmenistan." },
+   
+    ],
+  },
+    {
+    id: 7,
+    title: "Redenominated Manat launched in Turkmenistan",
+    date: "2 Yanvar 2009 ",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "Turkmenistan.ru, Ashgabat, 02 Jan 2009 – A series of banknotes and coins of newly redenominated national currency were launched in Turkmenistan on 1 January 2009. It should be recalled that Turkmen President Gurbanguly Berdimuhamedov signed a decree on the denomination of Manat on 14 April 2008." },
+      { type: "text", content: "Banknotes denominated in 1, 5, 10, 20, 50, 100, and 500 Manat and coins denominated in 1, 2, 5, 10, 20, and 50 Tenge have been circulated. New banknotes with high degree of protection meet international standards. 1 redenominated Manat equals 5000 old Manat, while 1 US dollar equals 2 Manat and 85 Tenge. " },
+      { type: "text", content: "Both old and new denominations will be allowed to circulate throughout 2009 and will be accepted as legal means of payment in all forms of payment at retail outlets, in the service sector and commercial banks, the Turkmen State News Agency (TDH) said. " },
+      { type: "text", content: "New Manat will be introduced gradually. Starting 3 January, new banknotes and coins will be used to pay pensions and state allowances. An advance of wages and stipends will be paid in new Manat a few days later. Under the decree of the head of state, all these payments increased by 10% as of 1 January 2009. Payments to Turkmen farmers for cotton will be also made in the newly redenominated Manat. " },
+         { type: "text", content: "All banks in Turkmenistan will be exchanging old Manat into redenominated ones without limits within 2010." },
+               ],
+  },
+    {
+    id: 8,
+    title: "Turkmenistan drops word 'Turkmenbashi' from the state anthem ",
+    date: "16 Dekabr 2008 ",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "Fergana.ru, Ashgabat, 16 Dec 2008 – RIA-Novosti reports indicate that the parliament of Turkmenistan passed a law “On the state anthem” amending the text of the anthem." },
+      { type: "text", content: "The word “Turkmenistan” that stands for “the father of all Turkmens” (the term previously applied to late President Saparmurat Niyazov) in the first line of the refrain was replaced with “halk” or “people”. The Turkmen state is now extolled in the anthem as “the great accomplishment of the people” which sounds more democratic." },
+      { type: "text", content: "The name of the Great Turkmenbashi is gradually dropped from official memory. Niyazov is no longer mentioned in the official oath. Studies of his book Rukhnama at colleges are less thorough, portraits of the late president were removed from some banknotes, and the name itself was removed from the presidential standard." },
+         ],
+  },
+    {
+    id: 9,
+    title: "Turkmenistan: OSCE Centre in Ashgabad organizes training course on human rights in the administration of justice",
+    date: "28 Noyabr 2008",
+    author: "Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "OSCE, Ashgabad, 27 Nov 2008 – International human rights standards related to apprehension, arrest and pre-trial detention are the focus of a training course launched by the OSCE Centre in Ashgabad today." },
+      { type: "text", content: "The two-day event brings together 26 participants, including judges from both the Supreme Court and lower courts, prosecutors, investigators and other law enforcement officials." },
+      { type: "text", content: "“Despite apprehension, arrest and pre-trial detention being legitimate procedural actions, they are all related to the limitation of personal liberty, and require due oversight from the judiciary and prosecutor’s office,” said Ambassador Ibrahim Djikic, the Head of the OSCE Centre." },
+      { type: "text", content: "“This training course will help participants deepen their understanding on international human rights standards.”" },
+         { type: "text", content: "Two international human rights experts will speak about the principles and basics of human rights concepts as covered by the International Covenant on Civil and Political Rights, with a particular focus on its provisions relating to criminal justice processes. The seminar will feature case studies as well as an exercise which will enable participants to apply the international standards discussed." },
+            { type: "text", content: "The course is a follow-up to a seminar on the rights of the accused from arrest to trial held in November 2007. The OSCE Centre plans to expand training courses on human rights standards to address other specific topics related to the administration of justice." },
+             
+    ],
+  },
+    {
+    id: 10,
+    title: "Uzbek books at the international exhibition",
+    date: "13 Oktyabr 2008 ",
+    author: "Azer Hasret",
+    tags: ["Özbəkistan","Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "UzA, Tashkent, 13 Oct 2008 – 22 states, including Uzbekistan, are presenting their potential in the publishing sphere at the thirs international exhibition in Ashgabat, Turkmenistan." },
+      { type: "text", content: "Uzbek Press and Information Agency told UzA that the country is represented by the publishing houses Uzbekistan national encyclopaedia, Uzbekiston, Ukituvchi, Chulpon, Gafur Gulom, Sharq Ziyokori and others. They are demonstrating books, photo albums, magazines, brochures, posters and other production." },
+      { type: "text", content: "Books “Modern miniature of Uzbekistan”, “Anthology of Uzbek children’s literature”, “Kobusnoma”, “Anthology of Uzbek poetry of 20 century” have drawn a lot of attention of the exhibition visitors." },
+    ],
+  },
+    {
+    id: 11,
+    title: "YouTube Blocked in Turkmenistan",
+    date: "6 Oktyabr 2008",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "Ferghana.ru, Moscow, 06 Oct 2008 – Popular website YouTube.com has been blocked in Turkmenistan since early September allegedly for posting satirical cartoons about Turkmenistan by TurkmenDissident TV, Khronika Turkmenistana reports." },
+      { type: "text", content: "Blocking of websites is endemic in Turkmenistan, all undesirable internet portals are blocked by the main Internet provider Turkmentelecom. Other provider, Russian company MTS, which depends on Turkmentelecom for license, has to consider local policies on the Internet." },
+      { type: "text", content: "Video materials on YouTube.com are also blocked in Uzbekistan since the website posted a movie Fitna by the Dutch parliamentarian Greet Wilders, where he explores the Quranic motivations for terrorism." },
+      { type: "text", content: "Internet information is strictly controlled in Uzbekistan. All the websites, which are blocked in this country permanently, including Ferghana.ru, have organized an online protest movement “This Site is Blocked in Uzbekistan.”" },
+      
+    ],
+  },
+    {
+    id: 12,
+    title: "1000-Meter TV Tower under Construction in Turkmenistan",
+    date: "23 Sentyabr 2008 ",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa, Ashgabat, 23 Sep 2008 – A TV tower that will peak 1020 meters above sea level is under construction in Turkmenistan. Turkish construction company Polimeks is doing the project." },
+      { type: "text", content: "Once completed, most of the TV, radio and digital transmission facilities and weather data collection units of Turkmenistan would be shifted to the TV tower." },
+      { type: "text", content: "Placed at the top of Hindivar mountain, some five kilometers from the southern edge of Ashgabat, the TV tower would probably be the most conspicuous landmark of Turkmenistan." },
+      { type: "text", content: "Solar energy will partly meet the power and illumination needs of the tower." },
+         { type: "text", content: "At the top of the tower there would be a viewing gallery and a revolving restaurant for 200 guests." },
+            { type: "text", content: "The 24-storey structure below the restaurant will house 10 studios, 100 rooms, technical and other facilities for electronic media, cafés and meeting hall." },
+               { type: "text", content: "The total internal covered area would be 54000 square meters." },
+    ],
+  },
+    {
+    id: 13,
+    title: "",
+    date: "16 Sentyabr 2008 ",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa Commentary by Tariq Saeedi, Ashgabat, 16 Sep 2008 – The 9-13 of Turkmenistan has occurred. Terrorism – the evil of our times – has struck Turkmenistan." },
+      { type: "text", content: "On 13 September 2008, the law enforcement agencies fought a bloody battle with a large gang of well trained and heavily armed drug dealers. The gang was finally suppressed but the toll was heavy: According to independent estimates, some 18 officers and troops may have lost their lives." },
+      { type: "text", content: "The office of the prosecutor general of Turkmenistan is investigating the case. In ordinary circumstances, nCa doesn’t comment on cases that are under investigation. However, these are not ordinary circumstances." },
+      { type: "text", content: "Terrorism has cast its ominous shadow on a peace-loving nation, a nation that always goes out of its way to promote stability and harmony in the entire Central Asian region." },
+         { type: "text", content: "There is just one point we would like to emphasize: Unless the evidence suggests otherwise, it would be important to consider whether some foreign country or countries were involved in the incident in any way whatsoever." },
+            { type: "text", content: "One can rightly ask as to why some foreign country or countries should be suspected of involvement in this mess." },
+            {type:"subtitle", content : "Here are some pointers:"},
+               { type: "text", content: "Looking at the number of casualties on the government side, it is easy to deduce that the gang of drug dealers was exceptionally large. Drug dealers in such large numbers will not band together unless induced by some power that has the motive and the means to do so." },
+                  { type: "text", content: "Why would drug dealers take up arms against the government, knowing that ultimately they are no match for the state firepower, without assurance of support from some external power?" },
+                     
+      { type: "text", content: "Training and arming a large group of people requires massive logistics and resources that are not available ordinarily in Turkmenistan." },
+       { type: "text", content: "The central agency of a big power is well known for its cozy connection with the drug world. The same agency is known for using the drug money for financing some of its operations." },
+       {type:"subtitle", content : "Some questions to ask are:"},
+     
+      { type: "text", content: "Is there any country that feels particularly frustrated by the gas deals that Turkmenistan signed recently with Russia and China?" },
+         { type: "text", content: "Is there any country or countries that would benefit from terror and disorder in Turkmenistan?" },
+            { type: "text", content: "Is there any country that routinely spreads disorder and chaos around the world, the most current examples being Bolivia and Venezuela?" },
+               { type: "text", content: "In addition to a big power, is there any country zealously supported by that big power, which is angry on cancellation of some contracts? The country that could be angry on cancellation of contracts may also be the country in want of cheap gas." },
+                  { type: "text", content: "These are just some of the reasons for suspecting foreign involvement in the 9-13 of Turkmenistan." },
+                   {type:"subtitle", content : "Additionally, one should also keep in mind the following:"},
+                       { type: "text", content: "The cultural centre of a certain foreign embassy in Turkmenistan has lately been asking strange questions from the young people frequenting their premises. Some of the questions are: What kind of change would you like in your country? What aspects of the government policy you don’t like? What kind of changes does your society need?" },
+         { type: "text", content: "Lately a phenomenon of spreading rumours methodically is discernible. It is the system that was devised in Belgrade and repeated elsewhere." },
+            { type: "text", content: "During the last year or so Turkmenistan has emerged as regional leader in anti-narcotic drive, as is evident from the reports of UNODC and other agencies. However, some country or countries would like to create an impression to the contrary because that would give them an opening for advancing their own agenda." },
+               { type: "text", content: "The investigators may like to keep returning to the key question: Which country or countries stand to benefit from chaos in Turkmenistan?" },
+                ],
+  },
+    {
+    id: 14,
+    title: "Turkmenistan Launches 'Office of International Information'",
+    date: "",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa, Ashgabat, 12 Sep 2008 – Turkmenistan announced Friday creation of ‘Office of International Information’ under the ministry of foreign affairs. This will replace the current department of information and analysis in the foreign office." },
+      { type: "text", content: "The new structure will presumably collect and analyze the media coverage and act as central dissemination agency on behalf of the government of Turkmenistan." },
+      { type: "text", content: "The same presidential decree that authorized establishment of the office of international information has also approved the central structure and staffing of the foreign office and allowed the opening of a branch of the foreign ministry in Turkmenbashy, the Caspian port city of Turkmenistan." },
+         ],
+  },
+    {
+    id: 15,
+    title: "UNDP Infotuk Web-Design Training for School Teachers in Turkmenistan",
+    date: "8 Sentyabr 2008",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa, Ashgabat, 07 Sep 2008 – The UNDP Project “Information Sharing in Turkmenistan for Sustainable Human Development” (InfoTuk) successfully conducted a two-day webmaster training late August for teachers of school computer centers run by the project in the city of Mary. Training was facilitated by the project staff." },
+      { type: "text", content: "Teachers of 10 Mary secondary schools have learned basics of web-design along with fundamentals of HTML language and mastered major techniques of graphics design and preparation of documents to be placed on web-sites. Trainees have also got a good grasp of some tools of web-sites hosting on Internet and other techniques. “I have learned many new things in the course of training. We teach computer literacy in schools but have no experience in web-site design and use of Internet. Now I can apply my webmaster knowledge in practice,” said Chariyeva Maysa, teacher of Mary’s N 20 school." },
+      { type: "text", content: "It is expected that all teachers who participated in web-design training will create web-sites for their schools in the near future. The websites will feature basic facts and information about school history, daily life and achievements, thus inspiring other schools to create their own web-sites. “We can start creating websites together with pupils now,” said Haitkuliyev Yusup, teacher of N 3 school." },
+      { type: "text", content: "The skills and knowledge gained by school teachers during training will allow for more efficient popularization of information technologies among teachers and pupils, as well as create grounds for a qualitative change in education system of Turkmenistan." },
+         { type: "text", content: "The UNDP InfoTuk Project started in 2001. The project is jointly implemented with the Ministry of Education of Turkmenistan. The project plays a key role in strengthening the capacity to use information and communication technology (ICT) at the national and local levels as means of increasing access to information and opportunities in education, science and technology in Turkmenistan. [Write up courtesy UNDP Turkmenistan]" },
+               ],
+  },
+    {
+    id: 16,
+    title: "OSCE media freedom representative visits Turkmenistan",
+    date: "5 Sentyabr 2008",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "OSCE, Ashgabad, 05 Sep 2008 – The OSCE Representative on Freedom of the Media, Miklos Haraszti, visited Ashgabad from 2 to 4 September to meet the stakeholders in Turkmenistan’s media governance and explore the potential for reform toward compliance with OSCE commitments in the media field." },
+      { type: "text", content: "“I was glad to accept the invitation by the government and visit the country at a time of reforms intended to open up Turkmenistan to the challenges of the modern world. My interlocutors showed interest in bringing Turkmenistan’s presently state-owned media closer to international standards,” Haraszti said." },
+      { type: "text", content: "During the visit, the OSCE Representative met Rashid Meredov, Deputy Chairman of the Cabinet of Ministers and Foreign Minister; Maysa Yazmuhammedova, Deputy Chairperson of the Cabinet of Ministers; Akdja Nurberdiyeva, the Chairperson of the Mejlis (parliament); Gulmyrat Myradov, Minister of Culture, TV, and Radiobroadcasting; and Djeren Taimova, the Chairperson of the State News Agency." },
+      { type: "text", content: "Haraszti also met accredited and non-accredited journalists contributing to international media, as well as media NGOs." },
+         { type: "text", content: "During his meetings with the officials involved in administration of the media, Haraszti offered the assistance of his office in legal reviews and training projects and discussed other ways they could co-operate." },
+            { type: "text", content: "“I hope that as a result of my meetings in Ashgabad, journalists from Turkmenistan will join us this year for our annual Central Asian Media Conference that will take place on 16 and 17 October in Almaty, Kazakhstan,” said Haraszti." },
+               { type: "text", content: "“During the talks, the need for a transparent and uncomplicated system of accreditation was also discussed" },
+                  { type: "text", content: "The visit of the OSCE Representative was prepared jointly by the Turkmenistan Foreign Ministry and the OSCE Centre in Ashgabat, headed by Ambassador Ibrahim Djikic, who participated in the official meetings." },
+    ],
+  },
+    {
+    id: 17,
+    title: "International action of journalists in support of colleagues in Turkmenistan",
+    date: "2 Sentyabr 2008 ",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "Gundogar, Moscow, 02 Sep 2008 – The initiative group of graduates of faculty of journalism of the Moscow State University continues preparation for the action in support of the colleagues imprisoned in Turkmenistan: former Foreign Affairs Minister Boris Shikhmuradov and former head of State TV and Radio Serdar Rahimov." },
+      { type: "text", content: "Action is planned for September 8th, the International day of solidarity of journalists. This day the journalists and mass-media, which have joined the action, will publish materials about infringement of human rights in Turkmenistan." },
+      { type: "text", content: "“Gundogar” calls readers to express the relation to a policy of the Turkmen authorities and to give the voices in support of political prisoners in Turkmenistan." },
+      { type: "text", content: "To familiarise with the text of the appeal to journalists and legal experts it is possible on the web site at www.gundogar.org." },
+         { type: "text", content: "It is possible to send the information on signing of the appeal and on participation in protest action to organizers of the action through “Gundogar” – gundogar@gundogar.org, or on e-mail addresses of Institute of the Regional Press (St. Petersburg) – pdi@spb.org.ru, asharogr@yandex.ru." },
+           
+    ],
+  },
+    {
+    id: 18,
+    title: "Turkmenistan: “Sacred Ruhnama”is lowered in the academic status",
+    date: "",
+    author: "22 Avqust 2008 ",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "Gundogar, Ashgabat, 21 Aug 2008 – Acting at the expanded session of the Cabinet of Ministers of Turkmenistan, taken place on August, 15th, 2008, president Qurbanqulu Berdymuhammedov declared an innovation in the curriculum of Turkmen high schools." },
+      { type: "text", content: "From the beginning of this academic year in the schedule of all high schools of the country there will be a new humanitarian discipline – “Social science of Turkmenistan” – which will include bases of such courses, as “Sacred Ruhnama”, “History”, “Philosophy”, “Sociology”, “Psychology”, “Ethics”, “Aesthetics”, “Political science”, “The Economic Theory” and “The Epoch of new Revival in Turkmenistan”, the president has declared." },
+      { type: "text", content: "Let’s remind, that earlier “Sacred Ruhnama” was studied in high schools as separate discipline and entered into the obligatory program of all introductory, transitive and final examinations." },
+      { type: "text", content: "Translated into English by CASCFEN" },
+       
+    ],
+  },
+    {
+    id: 19,
+    title: "Turkmenistan to Unveil New Constitution on 26 September 2008",
+    date: "18 Avqust 2008",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa, Ashgabat, 16 Aug 2008 – The revised version of the constitution of Turkmenistan, incorporating major amendments and introducing a whole new section on the rights of the individual, would be unveiled on 26 September 2008." },
+      { type: "text", content: "Ms. Akja Nurberdiyeva, chairperson of the parliament of Turkmenistan, told Friday during a meeting of the cabinet of ministers that the constitutional reforms committee was finalizing the draft in the light of thousands of proposals received from the citizens across the country." },
+      { type: "text", content: "President Berdymuhamedov instructed that all proposals must be considered carefully and where necessary the suggestions must be introduced into the final version of the constitution by 10 September 2008." },
+      { type: "text", content: "Khalk Maslahaty – People’s Council – the highest deliberative and legislative body of Turkmenistan will meet on 26 September 2008 in Ashgabat to adopt the revised constitution." },
+         { type: "text", content: "It is expected that after adopting the constitution the Khalk Maslahaty would either dissolve itself or would curtail its role to a merely consultative capacity because the revised version of the constitution is going to transfer almost all of its powers to the parliament and the president." },
+            { type: "text", content: "During the same session, the Khalk Maslahaty would also approve proposal for pardon of a large number of prisoners on the eve of the Night of Power (Gadyr Gijesi), the twenty-seventh night of the Holy month of Ramadan. Turkmenistan traditionally sets free nearly half of the prisoners every year on this occasion." },
+          
+    ],
+  },
+    {
+    id: 20,
+    title: "Turkmenistan Advocates Peaceful Means for Conflict Resolution in South Ossetia",
+    date: "16 Avqust 2008",
+    author: " Azer Hasret",
+    tags: ["Gürcüstan","Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa, Ashgabat, 15 Aug 2008 – In a statement issued Friday, the government of Turkmenistan has expressed concern and grief at the situation in South Ossetia and called for peaceful, diplomatic means to resolve the conflict." },
+      { type: "text", content: "“Turkmenistan expresses its deep concern and grief at the tragic events in South Ossetia leading to massive human casualties among the civilian population,” the statement issued by the foreign ministry of Turkmenistan says." },
+      { type: "text", content: "After extending condolence to the people affected by the events, the statement says, “Turkmenistan supports international efforts to create an atmosphere of dialogue in order to prevent the resumption of military conflict and humanitarian issues related to the consequences of this tragedy.”" },
+      { type: "text", content: "“Turkmenistan believes that conflict resolution should be implemented only through peaceful, diplomatic means and methods, which in turn will help ensure stability and security in the region,” concludes the statement." },
+    
+    ],
+  },
+    {
+    id: 21,
+    title: "Constitutional Reforms Take Shape in Turkmenistan",
+    date: "22 İyul 2008",
+    author: "",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "nCa, Ashgabat, 22 Jul 2008 – Turkmenistan has decided to introduce some fundamental amendments to its constitution." },
+      { type: "text", content: "A session of the constitutional reforms commission of Turkmenistan, chaired Monday by President Gurbanguly Berdymuhammedov, decided to abolish the Khalk Maslahaty (People’s Council) – the highest legislative and deliberative body of Turkmenistan – and transfer its powers to the president and the parliament." },
+      { type: "text", content: "The system of electing provincial and district governors has also been terminated. Instead of being elected by people’s representatives, the governors would now be appointed directly by the president of Turkmenistan." },
+      { type: "text", content: "The amendments are “aimed at more efficient use of the capacity for democratization of the society and the state,” said President Berdymuhamedov in his opening remarks to the session." },
+         { type: "text", content: "Here is the list of the constitutional amendments approved by the commission:" },
+            { type: "text", content: "Khalk Maslahaty (People’s Council) will be abolished and its powers would be transferred to the president and the parliament (Mejlis)." },
+               { type: "text", content: "Private ownership of land and means of production will be strengthened through constitutional amendments." },
+                  { type: "text", content: "The revised version of the constitution will provide for economic development of Turkmenistan, transition to market economy, equal legal status of different forms of ownership and promotion of small and medium enterprises. Article 10 of the constitution will read, in part, “Turkmenistan is developing its economy, seeking to create market economy, based on private, state and different forms of ownership. The state encourages and supports entrepreneurship, promotes the development of small and medium business.”" },
+                  { type: "text", content: "Every citizen will have the right to acquire and own living accommodations." },
+                  { type: "text", content: "The amended constitution will allow for opportunities for education on fee-basis. In addition to the chance for free education through government-owned institutions of learning, the amended constitution will probably allow for private or mixed public/private schools, colleges and universities. The article 39 of the constitution will be amended to read, in part, ‘on the basis and in accordance with the procedure established by law, to create paid educational institutions. . . . The state sets educational standards mandatory for all educational institutions.’" },
+                  { type: "text", content: "The revised constitution will draw a clear line between the representative and executive bodies. Article 82 of the constitution will be amended to describe that the provincial, city, district and town governors would be appointed directly by the president of Turkmenistan and they would act as representatives of the president of Turkmenistan. Local bodies will no more have the power to appoint or remove governors at any level." },
+                  { type: "text", content: "Legal aid organizations will help strengthen the legal protection of the citizens. In addition to lawyers, other individuals and legal entities can provide assistance to the citizens." },
+                  { type: "text", content: "In order to ensure their impartiality and full devotion to justice, the prosecutors and judges will not be allowed to join or retain membership of any political party or any other public association with political objectives during the tenure of their office. Articles 102 and 114 of the constitution of Turkmenistan will be amended accordingly." },
+                
+    ],
+  },
+    {
+    id: 22,
+    title: "Turkmenistan: RFE/RL unable to reach reporter",
+    date: "12 İyul 2008",
+    author: " Azer Hasret",
+    tags: ["Türkmənistan","Xəbərlər"],
+    image: "",
+    excerpt: "",
+    sections: [
+        
+      { type: "text", content: "New York, July 11, 2008—A contributing reporter for the Turkmen Service of the U.S.-funded Radio Free Europe/Radio Liberty (RFE/RL) who was forcibly held for two weeks in two different psychiatric facilities has now had his phone disabled, according to RFE/RL." },
+      { type: "text", content: "Bowing to international pressure, authorities freed Sazak Durdymuradov on July 3. A security officer warned him to “go and tell the truth” about his treatment in detention, and not to “slander” in his broadcasts, he said. Reports of Durdymuradov’s unlawful detention and alleged torture had outraged the international community, which called for his immediate release. CPJ attempted to interview Durdymuradov today, but was unable to get through to him." },
+      { type: "text", content: "Durdymuradov was due to participate today in an RFE/RL broadcast on human rights in Turkmenistan along with three other local contributors. But shortly after the Prague-based Turkmen service made contact with them, all the participants’telephone lines were simultaneously disabled. “We had to record our program with a different panel of participants,” RFE/RL Turkmen Service Director Oguljamal Yazliyeva told CPJ. CPJ also repeatedly tried to reach Durdymuradov today to confirm the details of his detention and release, but was unable to reach him on either his landline or cell phone." },
+      { type: "text", content: "“We are concerned that we and others are unable to contact our colleague Sazak Durdymuradov and by reports that his phone has been disabled,” said CPJ Europe and Central Asia Program Coordinator Nina Ognianova. “We ask that authorities ensure that Durdymuradov is able to communicate with the outside world.”" },
+         { type: "text", content: "Durdymuradov, 59, returned to his home in the Western city of Bakharden on July 4, RFE/RL reported. On July 7, in his first interview since being released, Durdymuradov told the broadcaster that Turkmen security officials said they set him free on the condition that he does not commit what they call slander. Of his detention at the Bezmein psychiatric clinic near the capital, Ashgabat, Durdymuradov said he was “thrown in there,” along with at least 30 mental patients, and left without supervision. “I did not sleep. If I’d fallen asleep, anything could have happened to me,” Durdymuradov told RFE/RL." },
+            { type: "text", content: "The day of his arrest, on June 20, school officials fired Durdymuradov from his full-time job as a high school history teacher. Yazliyeva told CPJ. As part of their efforts to stifle independent reporting, Turkmen authorities often put pressure on journalists and their family members, often by depriving them of their sources of income, CPJ research shows. Durdymuradov’s family of five now has to survive on the meager monthly salary of his younger daughter—330,000 Turkmen manat (about US$65), RFE/RL reported." },
+               { type: "text", content: "In his July 7 interview, Durdymuradov told RFE/RL he would continue his work despite his ordeal. He confirmed that the Turkmen security service coerced him to sign a statement of commitment to stop his collaboration with the radio when he was detained, but he refused. Upon his release, he said, a security officer told him:  “You can collaborate [with RFE/RL] without problems. But don’t slander. Don’t give false information to people. There won’t be problems if you give correct information.”" },
+                   ],
+  },
+
+  
+]

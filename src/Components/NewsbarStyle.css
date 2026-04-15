@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+/* ── Animations ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.7); }
+}
+
+/* ── Widget wrapper ── */
+.xeber-widget {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #080F20 0%, #0B1830 100%);
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,107,53,0.08);
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ── Header ── */
+.xeber-header {
+  position: relative;
+  background: linear-gradient(135deg, #FF5A1F 0%, #FF8C42 50%, #FF6B35 100%);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.xeber-header-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 150%, rgba(255,255,255,0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.xeber-header-shine {
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent, rgba(255,255,255,0.2), transparent);
+  pointer-events: none;
+}
+
+/* ── Live dot ── */
+.xeber-live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(255,255,255,0.8);
+  animation: pulse 1.8s infinite;
+  flex-shrink: 0;
+}
+
+/* ── Header title ── */
+.xeber-header-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Custom scrollbar track ── */
+.xeber-scrollbar-track {
+  position: absolute;
+  right: 4px;
+  top: 64px;
+  bottom: 56px;
+  width: 3px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 2px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.xeber-scrollbar-thumb {
+  position: absolute;
+  width: 3px;
+  height: 20%;
+  background: linear-gradient(180deg, #FF6B35, #FF8C42);
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(255,107,53,0.5);
+  transition: top 0.1s linear;
+}
+
+/* ── List ── */
+.xeber-list {
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 6px 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.xeber-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Item ── */
+.xeber-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px 12px 14px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.xeber-item:hover {
+  background: rgba(255,107,53,0.07);
+}
+
+/* ── Item accent bar ── */
+.xeber-item-accent {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #FF6B35, #FF8C42);
+  box-shadow: 0 0 8px rgba(255,107,53,0.5);
+  opacity: 0;
+  transform: scaleY(0.4);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform-origin: center;
+}
+
+.xeber-item:hover .xeber-item-accent {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* ── Item content ── */
+.xeber-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.xeber-item-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+/* ── Badge ── */
+.xeber-badge {
+  flex-shrink: 0;
+  margin-top: 2px;
+  background: linear-gradient(135deg, #FF6B35, #FF8C42);
+  color: #fff;
+  font-size: 8px;
+  font-weight: 900;
+  padding: 2px 6px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(255,107,53,0.4);
+}
+
+/* ── Item title ── */
+.xeber-item-title {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0;
+  color: #C8DCF0;
+  transition: color 0.2s ease;
+}
+
+.xeber-item:hover .xeber-item-title {
+  color: #FF8C42;
+}
+
+/* ── Item meta ── */
+.xeber-item-meta {
+  display: flex;
+  align-items: center;
+}
+
+.xeber-item-date {
+  font-size: 10px;
+  color: rgba(255,255,255,0.3);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ── Arrow ── */
+.xeber-arrow {
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.xeber-item:hover .xeber-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Item divider ── */
+.xeber-item-divider {
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  right: 14px;
+  height: 1px;
+  background: rgba(255,255,255,0.05);
+}
+
+/* ── Footer ── */
+.xeber-footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 12px 18px;
+  background: rgba(255,107,53,0.04);
+}
+
+.xeber-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF8C42;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  gap: 2px;
+  transition: opacity 0.2s;
+}
+
+.xeber-footer-link:hover {
+  opacity: 0.75;
+}

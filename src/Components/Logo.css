@@ -1,0 +1,85 @@
+/* Ana Header Fonu */
+.site-header {
+  width: 100%;
+  padding: 45px 0; /* Padding də 1.5 dəfə artırıldı */
+  background-color: #001f3f; 
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  /* Aradakı məsafə: 40px * 1.5 = 60px */
+  gap: 25%; 
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Ölçüləri 1.5 dəfə böyüdülmüş çərçivə */
+.logo-frame {
+  background-color: #ffffff;
+  border: 4px solid #ff8b17; /* Haşiyəni də bir az qalınlaşdırdıq */
+  border-radius: 20px;
+  
+  /* Daxili boşluq: 15px/25px * 1.5 ≈ 22px/38px */
+  padding: 22px 38px;
+  
+  /* En: 250px * 1.5 = 375px */
+  width: 375px; 
+  /* Hündürlük: 120px * 1.5 = 180px */
+  height: 180px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.logo-frame:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #D4AF37;
+}
+
+.img-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* --- Responsive (Mobil cihazlar üçün mütənasib böyütmə) --- */
+@media (max-width: 1024px) {
+  .logo-frame {
+    width: 300px;
+    height: 150px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    gap: 30px;
+  }
+
+  .logo-frame {
+    /* Mobildə də ölçülər əvvəlkindən 1.5 dəfə böyük saxlanıldı */
+    width: 240px; 
+    height: 120px;
+    padding: 15px;
+    border-width: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    /* Çox kiçik ekranlarda yan-yana sığması üçün optimallaşdırma */
+    gap: 15px;
+  }
+
+  .logo-frame {
+    width: 160px;
+    height: 90px;
+  }
+}

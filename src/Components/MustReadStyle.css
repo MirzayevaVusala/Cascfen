@@ -1,0 +1,321 @@
+/* Fontların importu */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap');
+
+.mustread-section {
+  position: relative;
+  background: linear-gradient(160deg, #060F22 0%, #0B1A35 60%, #0D2040 100%);
+  padding: 48px 0 56px;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+}
+
+.mustread-noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.mustread-glow-left {
+  position: absolute;
+  top: 0;
+  left: -120px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,107,53,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.mustread-glow-right {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(13,79,124,0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.mustread-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+}
+
+.mustread-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.mustread-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mustread-fire-icon {
+  font-size: 32px;
+  filter: drop-shadow(0 0 10px rgba(255,107,53,0.7));
+  line-height: 1;
+}
+
+.mustread-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(26px, 4vw, 38px);
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.mustread-subtitle {
+  color: rgba(255,255,255,0.4);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin: 4px 0 0;
+  text-transform: uppercase;
+}
+
+.mustread-scroll-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.mustread-scroll-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,107,53,0.35);
+  background: rgba(255,107,53,0.08);
+  color: #FF6B35;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.mustread-scroll-btn:hover {
+  background: rgba(255,107,53,0.2);
+  transform: scale(1.05);
+}
+
+.mustread-accent-line {
+  height: 2px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+
+.mustread-accent-line-fill {
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(90deg, #FF6B35, #FF8C42, transparent);
+  border-radius: 2px;
+}
+
+.mustread-track {
+  display: flex;
+  gap: 16px;
+  /* overflowX: auto; */
+  padding-bottom: 15px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.mustread-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.mustread-card {
+  flex: 0 0 clamp(220px, 24vw, 280px);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  cursor: pointer;
+  position: relative;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mustread-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,107,53,0.4);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,107,53,0.15);
+}
+
+.mustread-img-wrap {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.mustread-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.mustread-card:hover .mustread-img {
+  transform: scale(1.07);
+}
+
+.mustread-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(6,15,34,0.15) 0%, rgba(6,15,34,0.72) 100%);
+}
+
+.mustread-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #FF6B35, #FF9A5C);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 900;
+  padding: 4px 9px;
+  border-radius: 20px;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 12px rgba(255,107,53,0.55);
+  z-index: 2;
+}
+
+.mustread-num {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  color: rgba(255,255,255,0.08);
+  line-height: 1;
+  user-select: none;
+  letter-spacing: 2px;
+}
+
+.mustread-tags-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  z-index: 2;
+}
+
+.mustread-tag {
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.mustread-card-body {
+  padding: 14px 14px 16px;
+}
+
+.mustread-card-title {
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0 0 10px;
+  color: #E8F1FA;
+  transition: color 0.2s;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.mustread-card:hover .mustread-card-title {
+  color: #FF8C42;
+}
+
+.mustread-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mustread-date {
+  color: rgba(255,255,255,0.38);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.mustread-source {
+  color: #FF8C42;
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(255,107,53,0.1);
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+}
+
+.mustread-read-link {
+  display: flex;
+  align-items: center;
+  color: #FF6B35;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 10px;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.mustread-card:hover .mustread-read-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mustread-bottom-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF6B35, #FF8C42, transparent);
+  border-radius: 0 0 14px 14px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.mustread-card:hover .mustread-bottom-line {
+  opacity: 1;
+}
+
+.mustread-fade-left, .mustread-fade-right {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mustread-fade-left {
+  left: 0;
+  background: linear-gradient(90deg, #060F22, transparent);
+}
+
+.mustread-fade-right {
+  right: 0;
+  background: linear-gradient(270deg, #0D2040, transparent);
+}

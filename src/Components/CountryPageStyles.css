@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400&display=swap');
+
+:root {
+  --cp-bg:        #0d1b2e;
+  --cp-bg-card:   #112240;
+  --cp-bg-hover:  #162d4e;
+  --cp-accent:    #f97316;
+  --cp-tag-bg:    #c8102e;
+  --cp-text:      rgba(255,255,255,0.88);
+  --cp-muted:     rgba(255,255,255,0.45);
+  --cp-border:    rgba(255,255,255,0.08);
+}
+
+/* ══════════════════════════════
+   LIST PAGE
+══════════════════════════════ */
+.cp {
+  background: var(--cp-bg);
+  min-height: 60vh;
+  padding: 56px 0 100px;
+}
+
+.cp__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.cp__header {
+  margin-bottom: 40px;
+}
+
+.cp__region {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cp-accent);
+  border: 1px solid var(--cp-accent);
+  padding: 4px 12px;
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+.cp__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border-left: 4px solid var(--cp-accent);
+  padding-left: 16px;
+  margin: 0;
+}
+
+.cp__empty {
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--cp-muted);
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+/* ── Grid ── */
+.cp__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ── Card ── */
+.cp-card {
+  background: var(--cp-bg-card);
+  border: 1px solid var(--cp-border);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cp-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(249,115,22,0.35);
+}
+
+.cp-card__img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.cp-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cp-card:hover .cp-card__img {
+  transform: scale(1.04);
+}
+
+.cp-card__tags {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ── Tag ── */
+.cp-tag {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--cp-tag-bg);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.cp-card__body {
+  padding: 16px 18px 20px;
+}
+
+.cp-card__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.35;
+  margin: 0 0 8px;
+  transition: color 0.2s;
+}
+
+.cp-card:hover .cp-card__title {
+  color: var(--cp-accent);
+}
+
+.cp-card__meta {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.78rem;
+  color: var(--cp-muted);
+  margin: 0 0 10px;
+}
+
+.cp-card__excerpt {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.65;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ══════════════════════════════
+   CARD — VIDEO PLAY DÜYMƏSİ
+══════════════════════════════ */
+.cp-card__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  background: rgba(196, 16, 46, 0.88);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 2;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+}
+
+.cp-card__video-btn:hover {
+  background: rgba(196, 16, 46, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.cp-card__video-icon {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 4px; /* play ikonunu vizual mərkəzlə */
+  line-height: 1;
+}
+
+/* ══════════════════════════════
+   DETAIL PAGE
+══════════════════════════════ */
+.cp-card__tags--no-img {
+  position: static;
+  padding: 12px 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cp-detail {
+  background: var(--cp-bg);
+  min-height: 60vh;
+  padding: 56px 0 100px;
+}
+
+.cp-detail__inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Geri düyməsi */
+.cp-back {
+  background: none;
+  border: 1px solid var(--cp-border);
+  color: var(--cp-muted);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.cp-back:hover {
+  color: var(--cp-accent);
+  border-color: var(--cp-accent);
+}
+
+/* Tags */
+.cp-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* Başlıq */
+.cp-detail__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+/* Tarix / müəllif */
+.cp-detail__meta {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.85rem;
+  color: var(--cp-muted);
+  margin: 0 0 28px;
+}
+
+/* Əsas şəkil */
+.cp-detail__img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+/* Alt başlıq (excerpt) — şəkildən sonra */
+.cp-detail__subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+  margin: 0 0 28px;
+  text-transform: uppercase;
+  border-left: 4px solid var(--cp-accent);
+  padding-left: 14px;
+}
+
+/* ── Detal Səhifəsi — Video Embed ── */
+.cp-detail__video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+.cp-detail__video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Inline şəkillər (sections içindəki) */
+.cp-detail__img--inline {
+  max-height: 420px;
+  margin: 4px 0 24px;
+  border-radius: 4px;
+}
+
+/* Mətn paraqrafları */
+.cp-detail__para {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--cp-text);
+  line-height: 1.85;
+  margin: 0 0 18px;
+  text-align: justify;
+}
+
+/* Alt başlıqlar (subtitle) */
+.cp-detail__section-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+  margin: 40px 0 16px;
+  text-align: justify;
+}
+
+/* Float şəkil — solda, mətn sağda */
+.cp-detail__float {
+  float: left;
+  width: 260px;
+  margin: 4px 24px 16px 0;
+}
+
+.cp-detail__float-img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.cp-detail__float-cap {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.78rem;
+  color: var(--cp-muted);
+  text-align: center;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* Float clearfix */
+.cp-detail__float + p,
+.cp-detail__float + h2 {
+  overflow: hidden;
+}
+.skeleton-box {
+  background: #e0e0e0;
+  border-radius: 4px;
+  animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer {
+  0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; }
+}
+.cp__api-notice { color: orange; font-size: 13px; margin-bottom: 12px; }
+.cp__loading-more { text-align: center; padding: 16px; color: #888; }
+.cp__load-more { text-align: center; margin-top: 24px; }
+.cp-btn { padding: 10px 28px; border-radius: 6px; border: 1px solid #ccc; cursor: pointer; }
+.cp-detail__source-link { display: inline-block; margin-top: 24px; color: #1a73e8; }
+
+@media (max-width: 600px) {
+  .cp-detail__float {
+    float: none;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .cp__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cp__inner,
+  .cp-detail__inner {
+    padding: 0 20px;
+  }
+
+  .cp__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cp {
+    padding: 40px 0 60px;
+  }
+
+  .cp-detail {
+    padding: 40px 0 60px;
+  }
+}

@@ -1,0 +1,29 @@
+.contact-us-main {
+  /* display:grid; */
+ /* grid-template-rows:1fr 1fr 1fr; */
+    background-color: #f4f7fb;
+    /* padding: 50px 20px; */
+    font-family: 'Arial', sans-serif;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-us-title {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us-content {
+    display:grid;
+    
+    /* background-color: #ffffff; */
+    /* padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  

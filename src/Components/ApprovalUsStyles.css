@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400&display=swap');
+
+:root {
+  --decl-bg:            #0d1b2e;
+  --decl-bg-card:       #112240;
+  --decl-bg-hover:      #162d4e;
+  --decl-accent:        #c8102e;
+  --decl-text:          rgba(255, 255, 255, 0.85);
+  --decl-text-muted:    rgba(255, 255, 255, 0.45);
+  --decl-border:        rgba(255, 255, 255, 0.08);
+}
+
+/* ── Outer wrapper (className="decli") ── */
+.decli {
+  background: var(--decl-bg);
+  padding: 72px 0 120px;
+  min-height: 60vh;
+}
+
+/* ── Inner container ── */
+.decl__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ── Article block ── */
+.decl__block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Language badge ── */
+.decl__lang {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--decl-accent);
+  border: 1px solid var(--decl-accent);
+  padding: 4px 12px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+/* ── Heading ── */
+.decl__heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-left: 4px solid var(--decl-accent);
+  padding-left: 16px;
+}
+
+/* ── Lead paragraph ── */
+.decl__lead {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--decl-text);
+  line-height: 1.85;
+  margin: 0 0 20px;
+}
+
+/* ── Section subtitle ("We express...") ── */
+.decl__section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--decl-accent);
+  margin: 28px 0 14px;
+}
+
+/* ── Lists ── */
+.decl__list {
+  padding: 0;
+  margin: 0 0 24px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.decl__list li {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--decl-text);
+  line-height: 1.7;
+  padding: 12px 16px;
+  border-left: 3px solid var(--decl-accent);
+  background: var(--decl-bg-card);
+  border-radius: 0 4px 4px 0;
+  transition: background 0.2s;
+}
+
+.decl__list li:hover {
+  background: var(--decl-bg-hover);
+}
+
+/* ── Closing paragraph ── */
+.decl__closing {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--decl-text-muted);
+  line-height: 1.85;
+  font-style: italic;
+  margin: 0;
+  border-top: 1px solid var(--decl-border);
+  padding-top: 24px;
+  margin-top: 8px;
+}
+
+/* ── Divider between EN and AZ ── */
+.decl__divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--decl-accent) 0%, transparent 100%);
+  margin: 56px 0;
+  opacity: 0.35;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .decli {
+    padding: 48px 0 80px;
+  }
+
+  .decl__inner {
+    padding: 0 24px;
+  }
+
+  .decl__heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .decli {
+    padding: 32px 0 60px;
+  }
+
+  .decl__inner {
+    padding: 0 16px;
+  }
+}

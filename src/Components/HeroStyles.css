@@ -1,0 +1,213 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400&display=swap');
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero__grain {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 256px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.hero__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.hero__body {
+  max-width: 780px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.hero__body--in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero__tag {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 5px 14px;
+  border-radius: 2px;
+  margin-bottom: 32px;
+}
+
+.hero__title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 900;
+  line-height: 1.0;
+  margin: 0 0 28px;
+  letter-spacing: -0.03em;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero__subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 580px;
+}
+
+.hero__bar {
+  position: absolute;
+  bottom: 36px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero__bar-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  white-space: nowrap;
+}
+
+.hero__bar-line {
+  flex: 1;
+  height: 1px;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 0 6%; }
+  .hero__bar { left: 6%; right: 6%; }
+} */
+ .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.hero-about {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.hero-about h1 {
+    /* padding-bottom: 8rem !important; */
+    /* background-color: black !important; */
+
+}
+
+.hero-service {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.hero-service h1 {
+    /* padding-bottom: 8rem !important;
+    padding-right: rem !important; */
+    /* margin-right: 50px; */
+    /* display: flex;
+    justify-content: flex-start !important; */
+    /* background-color: rgb(7, 53, 36) !important; */
+    /* font-size: 6rem !important; */
+}
+
+img {
+    border-radius: 3%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    /* background-color: #fff; */
+    color: black;
+    /* -webkit-background-clip: text ; */
+    /* -webkit-text-fill-color:transparent ; */
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    padding: 0.5rem 0 2rem 0;
+
+}
+
+.hero-text .show {
+    text-decoration: none;
+
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+
+}
+
+@media screen and(max-width: 555px) {
+    .hero-text h1 {
+        padding: 10px 20px;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        padding: 0 0 2 rem 0;
+    }
+
+    .hero-text .show {
+        padding: 0.6rem 1.1rem;
+        font-size: 1rem;
+    }
+}

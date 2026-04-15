@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #060F22; */
+}
+
+.newest-newsbar-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .newest-newsbar-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .newest-newsbar-grid {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap');
+
+:root {
+  --navy: #0a0f2c;
+  --navy-deep: #060a1e;
+  --navy-mid: #111732;
+  --navy-hover: #1a2148;
+  --orange: #e85d04;
+  --orange-light: #f48c06;
+  --white: #f0f4ff;
+  --white-muted: rgba(240, 244, 255, 0.65);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.ribbon {
+  display: flex;
+  align-items: stretch;
+  background: var(--navy);
+  width: 100%;
+  min-height: 48px;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  z-index: 890;
+  border-bottom: 2px solid var(--orange);
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Desktop Menu ── */
+.ribbon-menu {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  flex: 1;
+}
+
+.ribbon-item {
+  position: relative;
+  display: flex;
+}
+
+.ribbon-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 16px;
+  color: var(--white-muted);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Aktiv Səhifə Rəngi */
+.ribbon-link.active {
+  background: var(--orange) !important;
+  color: #fff !important;
+}
+
+.ribbon-item:hover .ribbon-link:not(.active) {
+  background: var(--navy-hover);
+  color: var(--white);
+}
+
+/* ── Dropdown ── */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: var(--navy-mid);
+  list-style: none;
+  border: 1px solid rgba(232, 93, 4, 0.3);
+  border-top: 2px solid var(--orange);
+  z-index: 1000;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 12px 18px;
+  color: var(--white-muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dropdown-link.active {
+  color: var(--orange-light);
+  font-weight: 900;
+}
+
+/* ── Search (Desktop) ── */
+.ribbon-search {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ribbon-search input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  width: 150px;
+}
+
+.ribbon-search button {
+  background: none;
+  border: none;
+  color: var(--white-muted);
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* ── Mobile & Responsive ── */
+.ribbon-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ribbon-hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: 0.3s;
+}
+
+/* 1100px-də skrolu dayandırmaq üçün əsas keçid */
+@media (max-width: 1100px) {
+  .ribbon-menu, .ribbon-search {
+    display: none;
+  }
+  .ribbon-hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+  .ribbon {
+    justify-content: space-between;
+  }
+}
+
+.ribbon-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--navy-deep);
+  border-top: 2px solid var(--orange);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+
+.mobile-search-box {
+  display: flex;
+  padding: 12px;
+  background: var(--navy-mid);
+  gap: 8px;
+}
+
+.mobile-search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--orange);
+  background: #000;
+  color: white;
+}
+
+.mobile-search-box button {
+  background: var(--orange);
+  color: white;
+  border: none;
+  padding: 0 15px;
+  border-radius: 4px;
+}
+
+.mobile-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.mobile-main-link {
+  flex: 1;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.mobile-main-link.active {
+  background: var(--orange);
+}
+
+.mobile-arrow-btn {
+  padding: 15px 25px;
+  color: var(--orange);
+  font-size: 1.2rem;
+  border-left: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.mobile-arrow-btn.rotated {
+  transform: rotate(180deg);
+}
+
+.mobile-dropdown-content {
+  background: #0d122b;
+}
+
+.mobile-sub-link {
+  display: block;
+  padding: 12px 40px;
+  color: var(--white-muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  text-transform: uppercase;
+}
+
+.mobile-sub-link.active-sub {
+  color: var(--orange-light);
+  font-weight: 900;
+}

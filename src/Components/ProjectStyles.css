@@ -11,7 +11,7 @@
 /* ── Section ── */
 .projects-section {
   position: relative;
-  background: linear-gradient(160deg, #050E1F 0%, #0A1628 40%, #0C1E38 100%);
+  background: #14535a;
   padding: 48px 24px;
   font-family: 'Nunito', sans-serif;
   overflow: hidden;

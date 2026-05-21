@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap');
+
+/* ═══════════════════════════════════════════
+   WRAPPER
+═══════════════════════════════════════════ */
+.vs-wrapper {
+  background: #52b5a1;
+  padding: 40px calc((100% - 1300px) / 2 + 20px);
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ── Header ── */
+.vs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.vs-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vs-accent-bar {
+  display: block;
+  width: 5px;
+  height: 32px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #FF6B35, #FF8C42);
+  box-shadow: 0 0 12px rgba(255,107,53,0.6);
+  flex-shrink: 0;
+}
+
+.vs-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(22px, 3vw, 32px);
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.vs-nav-group {
+  display: flex;
+  gap: 8px;
+}
+
+.vs-nav-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,107,53,0.4);
+  background: rgba(255,107,53,0.1);
+  color: #FF6B35;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.vs-nav-btn:hover {
+  background: #FF6B35;
+  color: #fff;
+  border-color: #FF6B35;
+  box-shadow: 0 0 16px rgba(255,107,53,0.5);
+}
+
+/* ── Body: featured + list yan-yana ── */
+.vs-body {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+/* ── Featured (sol, geniş) ── */
+.vs-featured {
+  flex: 2.2;
+  min-width: 0;
+}
+
+/* Player */
+.vs-player-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.vs-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.vs-thumbnail-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.vs-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.vs-thumbnail-wrap:hover .vs-thumbnail {
+  transform: scale(1.03);
+}
+
+.vs-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #033a47;
+}
+
+.vs-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  transition: background 0.2s;
+}
+
+.vs-thumbnail-wrap:hover .vs-thumb-overlay {
+  background: rgba(0,0,0,0.2);
+}
+
+.vs-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255,107,53,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 8px rgba(255,107,53,0.25), 0 8px 32px rgba(0,0,0,0.4);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.vs-thumbnail-wrap:hover .vs-play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: #FF6B35;
+}
+
+.vs-thumb-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* Featured info */
+.vs-featured-info {
+  margin-bottom: 14px;
+}
+
+.vs-featured-title {
+  color: #fff;
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.vs-featured-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vs-date {
+  color: rgba(255,255,255,0.55);
+  font-size: 12px;
+}
+
+.vs-source {
+  background: rgba(255,107,53,0.2);
+  border: 1px solid rgba(255,107,53,0.5);
+  color: #FF8C42;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Dots */
+.vs-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.vs-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.vs-dot.active {
+  width: 28px;
+  background: #FF6B35;
+  box-shadow: 0 0 8px rgba(255,107,53,0.7);
+}
+
+/* ── Sağ: Video siyahısı ── */
+.vs-list {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 420px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.vs-list::-webkit-scrollbar { display: none; }
+
+.vs-list-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  cursor: pointer;
+  transition: all 0.2s;
+  align-items: flex-start;
+}
+
+.vs-list-item:hover {
+  background: rgba(255,255,255,0.07);
+}
+
+.vs-list-item.active {
+  background: rgba(255,107,53,0.1);
+  border-color: rgba(255,107,53,0.4);
+  box-shadow: 0 0 16px rgba(255,107,53,0.12);
+}
+
+.vs-list-thumb-wrap {
+  position: relative;
+  width: 90px;
+  height: 58px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #033a47;
+}
+
+.vs-list-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vs-list-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #033a47;
+}
+
+.vs-list-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
+  transition: background 0.2s;
+}
+
+.vs-list-item:hover .vs-list-play,
+.vs-list-item.active .vs-list-play {
+  background: rgba(255,107,53,0.5);
+}
+
+.vs-list-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.vs-list-title {
+  color: #E0E8F0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.vs-list-item.active .vs-list-title {
+  color: #fff;
+}
+
+.vs-list-date {
+  color: rgba(255,255,255,0.38);
+  font-size: 11px;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSİV
+═══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .vs-wrapper {
+    padding: 32px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vs-body {
+    flex-direction: column;
+  }
+  .vs-list {
+    max-height: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .vs-list-item {
+    flex: 1 1 calc(50% - 5px);
+  }
+}

@@ -16,7 +16,7 @@
 .ribbon {
   display: flex;
   align-items: stretch;
-  background: var(--navy);
+  background: #093452;
   width: 100%;
   min-height: 48px;
   font-family: 'Nunito', sans-serif;

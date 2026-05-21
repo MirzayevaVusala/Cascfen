@@ -16,7 +16,7 @@ const Footer = () => {
             <span className="footer__logo-cfen">CFEN</span>
           </h2>
           <p className="footer__tagline">
-            Working for freedom of expression culture
+            Central Asian and Southern Caucasian Freedom of Expression Network
           </p>
           <p className="footer__desc">
             Orta Asiya və Güney Qafqaz Söz Azadlığı Şəbəkəsi

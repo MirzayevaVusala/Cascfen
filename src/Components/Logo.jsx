@@ -6,6 +6,13 @@ const Logo = () => {
     <header className="site-header">
       <div className="header-container">
         
+        <div className="logo-frame">
+          <img 
+            src="./Photos/logo2.png" 
+            alt="CASCFEN Logo" 
+            className="img-logo" 
+          />
+        </div>
         {/* Sol tərəf: Dəstəkçi Loqosu */}
         <div className="logo-frame">
           <img 
@@ -16,13 +23,7 @@ const Logo = () => {
         </div>
 
         {/* Sağ tərəf: Əsas CASCFEN Loqosu */}
-        <div className="logo-frame">
-          <img 
-            src="./Photos/logo2.png" 
-            alt="CASCFEN Logo" 
-            className="img-logo" 
-          />
-        </div>
+        
 
       </div>
     </header>

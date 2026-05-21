@@ -10,7 +10,7 @@
 
 /* ── Wrapper ── */
 .footer {
-  background: var(--footer-bg);
+  background: #0d2e2b;
   color: var(--footer-text);
   font-family: 'Segoe UI', sans-serif;
 }
@@ -156,7 +156,7 @@
 
 /* ── Bottom bar ── */
 .footer__bottom {
-  background: var(--footer-bg-dark);
+  background:#09160c;
   border-top: 1px solid var(--footer-border);
   padding: 20px 40px;
   max-width: 100%;

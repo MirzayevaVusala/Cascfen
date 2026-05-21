@@ -1,8 +1,8 @@
 /* Ana Header Fonu */
 .site-header {
   width: 100%;
-  padding: 45px 0; /* Padding də 1.5 dəfə artırıldı */
-  background-color: #001f3f; 
+  padding: 15px 0; /* Padding də 1.5 dəfə artırıldı */
+  background-color: #054F60; 
   box-sizing: border-box;
 }
 
@@ -13,7 +13,8 @@
   /* Aradakı məsafə: 40px * 1.5 = 60px */
   gap: 25%; 
   max-width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+ 
 }
 
 /* Ölçüləri 1.5 dəfə böyüdülmüş çərçivə */
@@ -23,12 +24,12 @@
   border-radius: 20px;
   
   /* Daxili boşluq: 15px/25px * 1.5 ≈ 22px/38px */
-  padding: 22px 38px;
+  padding: 12px 10px;
   
   /* En: 250px * 1.5 = 375px */
-  width: 375px; 
+  width: 300px; 
   /* Hündürlük: 120px * 1.5 = 180px */
-  height: 180px;
+  height: 150px;
   
   display: flex;
   align-items: center;
@@ -46,7 +47,7 @@
 .img-logo {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 /* --- Responsive (Mobil cihazlar üçün mütənasib böyütmə) --- */
